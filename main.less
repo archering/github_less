@@ -44,3 +44,27 @@
    // .roundCorner;//如果没有参数，或者有默认参数，可以不写
     .roundCorner(10px);//使用类函数
 }
+#nspace{//这是一个namespace
+    .doul{
+        list-style: none;
+    }
+
+    .doli{
+         width: 100px;
+        heihgt:20px;
+        margin:4px;
+        background-color:#d3d3bf;
+    }
+}
+
+
+.ns{
+    ul{
+        #nspace > .doul; //引用命名空间里面的 类
+        li{
+            #nspace > .doli
+        }
+    }
+}
+
+//@import "@{themes}/tidal-wave.less";   字符串中得 变量

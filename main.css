@@ -35,3 +35,21 @@
   -o-border-radius: 10px;
   border-radius: 10px;
 }
+#nspace .doul {
+  list-style: none;
+}
+#nspace .doli {
+  width: 100px;
+  heihgt: 20px;
+  margin: 4px;
+  background-color: #d3d3bf;
+}
+.ns ul {
+  list-style: none;
+}
+.ns ul li {
+  width: 100px;
+  heihgt: 20px;
+  margin: 4px;
+  background-color: #d3d3bf;
+}
