@@ -1,0 +1,46 @@
+@co:#333;@w:800px;@h:200px;
+.d1{// 使用变量 @   【;】不可缺少
+    background-color: @co;
+    width:@w;
+    height:@h;
+}
+
+// 使用嵌套，本来是 .d2 p{}  写成这个样子
+.d2{
+    background-color:((@co+#123)*2);//所有的运算必须包含在（）内
+    p{
+        color:white;
+        font-size:24px;
+    }
+}
+
+#dc{
+    background-color: @co;
+    ul{
+        list-style: none;
+    }
+    li{
+        width: 100px;
+        heihgt:20px;
+        margin:4px;
+        background-color:#d3d3bf;
+        &:hover{//& 链接伪类pseudo-class
+            background-color:#afbcd3;
+        }
+    }
+}
+
+.roundCorner(@ra:5px){
+    -webkit-border-radius:@ra;
+    -moz-border-radius:@ra;
+    -o-border-radius:@ra;
+    border-radius:@ra;
+}
+
+#ne{
+    width: 200px;
+    height:200px;
+    background-color: red;
+   // .roundCorner;//如果没有参数，或者有默认参数，可以不写
+    .roundCorner(10px);//使用类函数
+}
